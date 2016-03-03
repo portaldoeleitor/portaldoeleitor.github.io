@@ -2,7 +2,6 @@
 /** 
   * DEFINIÇÕES
   */
-
 # banco principal
 define("DBURL_1","localhost");
 define("DBUSR_1","root");
@@ -25,6 +24,8 @@ define("DBNAME_3","pde");
   * FUNÇÕES DO SISTEMA
   */
 function conecta(){
+	#mysql_connect(DBURL_1,DBUSR_1,DBPSW_1) or die(mysql_error());
+	#mysql_select_db(DBNAME_1) or die(mysql_error());
     // tenta se conectar ao servidor principal
     if(mysql_connect(DBURL_1,DBUSR_1,DBPSW_1)){
 	if(mysql_select_db(DBNAME_1)){ // se conseguir conexão, tenta selecionar banco
