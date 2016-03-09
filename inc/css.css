@@ -9,3 +9,17 @@
 #resultados {
 	margin-top: 30px;
 }
+#numerocand {
+	float: left;
+	font-size: 90px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000000;
+	color: #000;
+	margin-right: 20px;
+}
+#nomecand {
+	padding-top: 22px;
+}
+#nomecand b {
+	font-size: 40px ;
+}
