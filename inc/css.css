@@ -23,3 +23,7 @@
 #nomecand b {
 	font-size: 40px ;
 }
+#foto {
+	float: left;
+	width: 320px;
+}
