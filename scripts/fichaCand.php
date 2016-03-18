@@ -68,7 +68,10 @@ if($_POST["a"] == 1){
 							</div>
 						</div>
 						<div class="tab-pane active" id="panel-noticias">
-							
+							<?
+							echo "<p align=\"center\"".$bs->tooltip("Clique aqui para inserir not&iacute;cias deste candidato.")."><a href=\"#\" class=\"btn btn-default\" onclick=\"insereNoticia('$id','$ano','$uf');\">Nenhuma not&iacute;cia cadastrada.</a></p>";
+							?>
+							<div id="novaNoticia" style="display: none"></div>
 						</div>
 						<div class="tab-pane" id="panel-<?= $ano ?>">
 							<div class="col-md-6">

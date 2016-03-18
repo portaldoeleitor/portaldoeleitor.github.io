@@ -16,3 +16,8 @@ $(document).keypress(function(e) {
 		pesquisa();
 	}
 });
+
+function insereNoticia(id,ano,uf){
+	//abre página de comentários do facebook para divulgar links de sites externos
+	$('#novaNoticia').toggle();
+}
