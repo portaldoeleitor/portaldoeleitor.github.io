@@ -3,12 +3,12 @@ function pesquisa(){
 	var ano = $('#a').val();
 	var uf = $('#uf').val();
 	$('#resultados').html("Pesquisando candidatos...");
-	$('#resultados').load('scripts/buscaCand.php', {a:1, termo:termo, ano:ano, uf:uf});
+	$('#resultados').load('http://portaldoeleitor.16mb.com/scripts/buscaCand.php', {a:1, termo:termo, ano:ano, uf:uf});
 }
 
 function abreFicha(id,ano,uf){
 	$('#resultados').html("Abrindo ficha...");
-	$('#resultados').load('scripts/fichaCand.php', {a:1, id:id, ano:ano, uf:uf});
+	$('#resultados').load('http://portaldoeleitor.16mb.com/scripts/fichaCand.php', {a:1, id:id, ano:ano, uf:uf});
 }
 
 $(document).keypress(function(e) {

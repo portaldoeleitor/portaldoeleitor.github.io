@@ -2,7 +2,7 @@
 ini_set('display_errors', 1);
 error_reporting(E_ERROR);
 header("Content-Type: text/html; charset=ISO-8859-1",true);
-
+header( 'Access-Control-Allow-Origin: *' );
 include("../inc/bigboss/inc/bigboss.php");
 include("../inc/core.php");
 
