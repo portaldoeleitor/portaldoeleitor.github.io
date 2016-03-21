@@ -35,6 +35,9 @@ if($_POST["a"] == 1){
 						<li>
 							<a href="#panel-<?= $ano ?>" data-toggle="tab"><?= $ano ?></a>
 						</li>
+						<li>
+							<a href="#panel-2008" data-toggle="tab">2008</a>
+						</li>
 					</ul>
 					<div class="tab-content">
 						<div class="tab-pane active" id="panel-ficha">
@@ -67,13 +70,14 @@ if($_POST["a"] == 1){
 								</div>
 							</div>
 						</div>
-						<div class="tab-pane active" id="panel-noticias">
+						<div class="tab-pane" id="panel-noticias">
 							<?
-							echo "<p align=\"center\"".$bs->tooltip("Clique aqui para inserir not&iacute;cias deste candidato.")."><a href=\"#\" class=\"btn btn-default\" onclick=\"insereNoticia('$id','$ano','$uf');\">Nenhuma not&iacute;cia cadastrada.</a></p>";
+							echo "<p align=\"center\"><a href=\"#\" class=\"btn btn-default\">Nenhuma not&iacute;cia cadastrada.</a></p>";
 							?>
 							<div id="novaNoticia" style="display: none"></div>
 						</div>
 						<div class="tab-pane" id="panel-<?= $ano ?>">
+							<h3>Dados da candidatura</h3>
 							<div class="col-md-6">
 								<b><?= $r["DESCRICAO_ELEICAO"] ?></b><br>
 								<b><?= $r["DESCRICAO_UE"] ?>/<?= $r["SIGLA_UF"] ?></b><br>
@@ -88,6 +92,14 @@ if($_POST["a"] == 1){
 								<b>Situa&ccedil;&atilde;o da candidatura: </b><?= $r["DES_SITUACAO_CANDIDATURA"] ?><br>
 							</div>
 							<div style="clear: both"></div>
+							<h3>Bens declarados</h3>
+							<div class="col-md-12">
+								<p>Em breve.</p>
+							</div>
+							<h3>Resultado na elei&ccedil;&atilde;o</h3>
+							<div class="col-md-6">
+								<p>Em breve.</p>
+							</div>
 							<?
 							//dados da eleição
 							//declaração de bens
@@ -95,6 +107,9 @@ if($_POST["a"] == 1){
 								//o que est&aacute; achando ou achou do mandato deste pol&iacute;tico?
 							}
 							?>
+						</div>
+						<div class="tab-pane" id="panel-2008">
+							<p>Em breve, voc&ecirc; poder&aacute; ver todos os anos em que esta pessoa foi candidata!</p>
 						</div>
 					</div>
 				</div>
